@@ -34,9 +34,9 @@ middleware.forEach((it) => server.use(it))
 const url = 'https://trackapi.nutritionix.com/v2/natural/nutrients'
 
 const headers = {
-  'x-app-id': 'd84dd1bd',
-  'x-app-key': '99f360aadf0a1b6af9ef08ce88562693',
-  'x-remote-user-id': '0',
+  'x-app-id': config['x-app-id'],
+  'x-app-key': config['x-app-key'],
+  'x-remote-user-id': config['x-remote-user-id'],
 }
 
 server.get('/api/v1/:product', async (req, res) => {
