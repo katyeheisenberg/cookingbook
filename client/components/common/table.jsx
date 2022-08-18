@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React from 'react'
 import { useSelector } from 'react-redux'
 
@@ -60,7 +61,7 @@ const Table = () => {
         </tbody>
         <tfoot>
           <tr className="text-center border-t font-mono font-semibold">
-            <td className="font-bold py-1 max-w-xs text-white antialiased font-mono font-semibold">
+            <td className="py-1 max-w-xs text-white antialiased font-mono font-semibold">
               Total:
             </td>
             <td className="text-white antialiased font-mono font-semibold">
@@ -78,7 +79,7 @@ const Table = () => {
             </td>
           </tr>
           <tr className="text-center border-t text-white antialiased font-mono font-semibold">
-            <td className="font-bold py-1 max-w-xs text-white antialiased font-mono font-semibold">
+            <td className="py-1 max-w-xs text-white antialiased font-mono font-semibold">
               Per 100 grams:
             </td>
             <td className="text-white antialiased font-mono font-semibold">
