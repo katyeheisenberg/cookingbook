@@ -8,7 +8,7 @@
     "dev": "clear & yarn run watch:server & yarn run watch:client",
     "watch:server": "nodemon start.js",
     "watch:client": "webpack serve --config webpack.dev.js",
-    "build:prod": "cross-env NODE_ENV=production webpack --config webpack.prod.js --progress  --profile",
+    "build:prod": "cross-env NODE_ENV=dev webpack --config webpack.dev.js --progress  --profile",
     "lint": "eslint './server/**/*.js' './client/**/*.js' './client/**/*.jsx'",
     "prettier": "prettier './server/**/*.js' './client/**/*.js' './client/**/*.jsx' --write --no-error-on-unmatched-pattern",
     "start": "cross-env NODE_ENV=production && node start.js",
