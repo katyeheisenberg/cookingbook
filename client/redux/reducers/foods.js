@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const GET_FOOD = '@foods/GET_FOOD'
 const UPDATE_FOOD_LIST = '@foods/UPDATE_FOOD_LIST'
 
