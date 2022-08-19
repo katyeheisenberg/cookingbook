@@ -1,3 +1,6 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable import/extensions */
+/* eslint-disable import/order */
 require('dotenv').config()
 
 const { merge } = require('webpack-merge')

@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-import config from '../config'
+// import config from '../config'
 
 mongoose.connection.on('connected', () => {
   // eslint-disable-next-line
@@ -15,7 +15,9 @@ mongoose.connection.on('error', (err) => {
   process.exit(1)
 })
 
-exports.connect = async (mongoUrl = config.mongoUrl) => {
+const mongoUrl = 'mongodb+srv://cookbook:2313@book.mftwazr.mongodb.net/test?retryWrites=true&w=majority'
+
+exports.connect = async () => {
   mongoose.connect(mongoUrl)
   return mongoose.connection
 }

@@ -1,3 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable quotes */
 require('dotenv').config()
 
 const { resolve } = require('path')
