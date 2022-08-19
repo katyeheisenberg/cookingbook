@@ -15,7 +15,7 @@ mongoose.connection.on('error', (err) => {
   process.exit(1)
 })
 
-const mongoUrl = 'mongodb+srv://cookbook:2313@book.mftwazr.mongodb.net/test'
+const mongoUrl = 'mongodb+srv://cookbook:2313@book.mftwazr.mongodb.net/cookbook'
 
 exports.connect = async () => {
   mongoose.connect(mongoUrl, {
