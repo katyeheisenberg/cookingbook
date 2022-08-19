@@ -18,6 +18,11 @@ mongoose.connection.on('error', (err) => {
 const mongoUrl = 'mongodb+srv://cookbook:2313@book.mftwazr.mongodb.net/test?retryWrites=true&w=majority'
 
 exports.connect = async () => {
-  mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
+  mongoose.connect(mongoUrl, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  })
   return mongoose.connection
 }
